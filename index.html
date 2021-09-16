@@ -75,7 +75,7 @@
     </div>
 
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      <li><a href="https://jenn3d.org/" class="nav-link px-2 link-dark" target="_blank">Homepage</a></li>
+      <li><a href="https://jenn3d.org/" class="nav-link px-2 link-dark" target="_blank">Desktop</a></li>
       <li><a href="https://github.com/fritzo/jenn3d" class="nav-link px-2 link-dark" target="_blank">GitHub</a></li>
     </ul>
   </header>
@@ -1086,9 +1086,7 @@
 
   // zoom-related
   let prevTouches;
-  const dist = (t) => {
-    return (t[0].pageX - t[1].pageX) ** 2 + (t[0].pageY - t[1].pageY) ** 2;
-  }
+  const dist = (t) => (t[0].pageX - t[1].pageX) ** 2 + (t[0].pageY - t[1].pageY) ** 2;
   const patchZoom = () => {
     const canvas = Module.canvas;
 
