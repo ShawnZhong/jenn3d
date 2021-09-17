@@ -1063,7 +1063,7 @@
     }
 
     const dpi = window.devicePixelRatio;
-    const aspectRatio = window.innerWidth < 1200 ? 4 / 3 : 1;
+    const aspectRatio = window.innerWidth < 1200 ? 4 / 3 : 3 / 4;
     const width = Math.round(Module.canvas.clientWidth * scaleFactor * dpi / 2);
     return [width, width * aspectRatio];
   }
